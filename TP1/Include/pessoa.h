@@ -12,7 +12,7 @@ class Pessoa {
 
 public:
     // Construtor
-    Pessoa( const string nome = "", const string cpf = "");
+    Pessoa( string nome , string cpf);
 
     // Destrutor virtual para permitir destruição adequada em herança
     virtual ~Pessoa();
@@ -24,8 +24,6 @@ public:
     string getCpf() const;
     void setcpf(string cpf);
 
-    // Método virtual que pode ser sobrescrito nas subclasses
-    virtual void mostrarDados() const;
 };
 
 #endif
