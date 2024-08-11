@@ -9,7 +9,7 @@ class Mecanico : public Funcionario {
 public:
     // Construtor de Mecanico
     Mecanico(const string& nome, const string& cpf, int idFuncionario);
-
+    virtual ~Mecanico();
     // Implementação do método realizarTarefas
     void realizarTarefas() const override;
 
